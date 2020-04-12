@@ -1,0 +1,28 @@
+.footer {
+  background-color: $green;
+  padding: 3%;
+
+  &_content {
+    text-align: center;
+
+    img {
+      width: 100px;
+      margin-bottom: 30px;
+    }
+
+    p,
+    a {
+      color: white;
+      font-size: $footer_fontsize;
+      margin-bottom: 7px;
+    }
+
+    .phone {
+      margin-bottom: 30px;
+    }
+
+    .credentials {
+      font-size: 11px;
+    }
+  }
+}

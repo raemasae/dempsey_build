@@ -1,0 +1,97 @@
+.intro {
+  background-image: url('images/dempsey_headerTestImage@2x.png');
+  background-size: cover;
+  height: 75vh;
+  padding: $base_margin;
+
+  &_head {
+    @include base_grid;
+
+    grid-template-areas: "headline headline ...." "main_button main_button ....";
+    height: 100%;
+    padding: 10% 0;
+
+    .headline {
+      grid-area: headline;
+      width: auto;
+      margin-bottom: 15%;
+    }
+
+    .main_button {
+      @include button;
+
+      grid-area: main_button;
+      width: 60%;
+      height: 48px;
+    }
+
+    .main_button:hover {
+      background-color: #80c554;
+    }
+
+    .main_button:active {
+      @include button_click;
+    }
+  }
+}
+
+.intro_content {
+  padding: 7% 3%;
+
+  &_row {
+    @include base_grid;
+
+    .headline {
+      @include text_3row;
+
+      position: relative;
+    }
+
+    .headline_line::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      right: 0;
+      background-color: $green;
+      height: 6px;
+      width: 6px;
+      border-radius: 5px;
+    }
+
+    .subhead {
+      grid-column: 1 / 3;
+      grid-row: 2;
+    }
+
+    .paragraph {
+      margin-bottom: 10%;
+      grid-row: 2;
+      margin-right: 5%;
+    }
+
+    .one {
+      grid-column: 3 / 5;
+    }
+
+    .two {
+      grid-column: 5 / 7;
+    }
+  }
+}
+
+.intro_content.content_two {
+  background-image: url('images/dempsey_testbg@2x.png');
+  background-size: cover;
+
+  .intro_content_row {
+    .headline {
+      @include text_row;
+    }
+
+    .three {
+      grid-column: 2 / 6;
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+}

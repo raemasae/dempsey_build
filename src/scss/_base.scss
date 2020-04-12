@@ -1,11 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 
 //base layout style
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1;
   background-repeat: no-repeat;
+}
+
+//add prefixes
+@mixin prefix($declarations, $prefixes: ()) {
+  @each $property, $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+
+    #{$property}: $value;
+  }
+}
+
+//base margin
+$base_margin: 0 3%;
+
+//base grid
+@mixin base_grid {
+  @include prefix((
+    display: grid,
+    grid-template-columns: repeat(6, 1fr),
+    grid-template-rows: repeat(2, auto),
+    grid-gap: 2%), webkit ms moz);
+}
+
+//base colors
+$green: #355426;
+$light_green: #8cd360;
+$font_color: #5f5f5f;
+
+//font variables
+$header_font: 'Anton', serif;
+$header_fontsize: calc(18px + 2.6vw);
+$header_fontheight: 1.2;
+$header_fontspacing: 1px;
+
+$subhead_fontsize: calc(18px + 1vw);
+$subhead_fontspacing: 0.5px;
+
+$main_font: 'Merriweather Sans', sans-serif;
+$light_fontweight: 100;
+
+$link_fontsize: calc(18px + 0.5vw);
+
+$footer_fontsize: 15px;
+
+//headline font
+@mixin headline_font {
+  font-size: $header_fontsize;
+  font-family: $header_font;
+  line-height: $header_fontheight;
+  letter-spacing: $header_fontspacing;
+  color: $green;
+}
+
+@mixin subhead_font {
+  font-size: $subhead_fontsize;
+  font-family: $header_font;
+  letter-spacing: $subhead_fontspacing;
+  color: $font_color;
+}
+
+h1 {
+  @include headline_font;
+}
+
+@mixin text_row {
+  grid-column: 2 / 6;
+  border-bottom: none;
+  margin-bottom: 3%;
+  text-align: center;
+  margin-right: 0;
+}
+
+@mixin text_3row {
+  grid-column: 1 / 4;
+  margin-right: 20%;
+  margin-bottom: 15%;
+  border-bottom: 1px solid $green;
+}
+
+h2 {
+  @include subhead_font;
+}
+
+p {
+  font-weight: $light_fontweight;
+  color: $font_color;
+  line-height: 1.7;
 }
