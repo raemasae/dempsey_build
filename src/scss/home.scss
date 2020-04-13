@@ -10,11 +10,11 @@
     grid-template-areas: "headline headline ...." "main_button main_button ....";
     height: 100%;
     padding: 10% 0;
+    grid-row-gap: 30px;
 
     .headline {
       grid-area: headline;
       width: auto;
-      margin-bottom: 15%;
     }
 
     .main_button {
@@ -36,10 +36,12 @@
 }
 
 .intro_content {
-  padding: 7% 3%;
+  padding: 7%;
 
   &_row {
     @include base_grid;
+
+    grid-template-rows: repeat(2, auto);
 
     .headline {
       @include text_3row;

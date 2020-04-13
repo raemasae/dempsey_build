@@ -23,14 +23,14 @@
 }
 
 //base margin
-$base_margin: 0 3%;
+$base_margin: 0 7%;
 
 //base grid
 @mixin base_grid {
   @include prefix((
     display: grid,
     grid-template-columns: repeat(6, 1fr),
-    grid-template-rows: repeat(2, auto),
+    grid-template-rows: repeat(2, 1fr),
     grid-gap: 2%), webkit ms moz);
 }
 

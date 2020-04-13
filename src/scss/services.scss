@@ -1,0 +1,53 @@
+.services_content_wrapper {
+  @include base_grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-row-gap: 50px;
+  margin: 7%;
+
+  &_border {
+    border: 3px solid;
+    border-color: $light_green white;
+    padding: 10px 0;
+
+    &_grids {
+      background-image: url("images/dempsey_headerTestImage.png");
+      background-position: 100%;
+      position: relative;
+      min-height: 300px;
+
+      .service_title {
+        background: white;
+        padding: 3% 7%;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        font-size: $link_fontsize;
+
+        span {
+          background-color: $green;
+          width: 100px;
+          height: 2px;
+          position: absolute;
+          top: 50%;
+          margin-left: 2%;
+        }
+
+        span::after {
+          content: '';
+          position: absolute;
+          top: -2.5px;
+          right: 0;
+          background-color: $green;
+          height: 5px;
+          width: 5px;
+          border-radius: 5px;
+        }
+      }
+
+      &_content {
+        // display: none;
+      }
+    }
+  }
+}
