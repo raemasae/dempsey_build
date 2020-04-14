@@ -17,6 +17,12 @@
     justify-content: space-between;
 
     .contact_form {
+      &_title {
+        .subhead {
+          color: $green;
+        }
+      }
+
       &_address {
         margin: 5% 0 10%;
 
