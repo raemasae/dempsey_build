@@ -1,9 +1,15 @@
 .contact_form {
-  width: 35vw;
+  width: 40vw;
+  margin: 0 auto;
+  margin-left: 7%;
+  display: flex;
+  flex-flow: column;
+  align-self: center;
 
   form {
     display: flex;
     flex-flow: column;
+    width: 100%;
 
     label {
       font-family: $main_font;
@@ -14,17 +20,28 @@
     input {
       margin-bottom: 15px;
       padding: 1%;
-      width: 60%;
+      width: 70%;
+      font-size: 16px;
     }
 
     textarea {
-      width: 60%;
+      width: 70%;
       height: 150px;
       border-color: #d4d2d2;
+      font-size: 16px;
+      margin-bottom: 15px;
     }
 
     .main_button {
       @include button;
+    }
+
+    .main_button:hover {
+      background-color: #80c554;
+    }
+
+    .main_button:active {
+      @include button_click;
     }
   }
 }
