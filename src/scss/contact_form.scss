@@ -1,0 +1,30 @@
+.contact_form {
+  width: 35vw;
+
+  form {
+    display: flex;
+    flex-flow: column;
+
+    label {
+      font-family: $main_font;
+      font-weight: $light_fontweight;
+      margin-bottom: 5px;
+    }
+
+    input {
+      margin-bottom: 15px;
+      padding: 1%;
+      width: 60%;
+    }
+
+    textarea {
+      width: 60%;
+      height: 150px;
+      border-color: #d4d2d2;
+    }
+
+    .main_button {
+      @include button;
+    }
+  }
+}
