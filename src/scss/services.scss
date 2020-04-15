@@ -27,7 +27,7 @@
   &_wrapper {
     @include base_grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
     grid-gap: 70px;
     grid-row-gap: 100px;
     margin: 7%;
