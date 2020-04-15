@@ -1,52 +1,161 @@
-.services_content_wrapper {
-  @include base_grid;
+.services_header_image {
+  background-image: url('src/images/AdobeStock_270324096_Preview.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-row-gap: 50px;
-  margin: 7%;
+.services_content {
+  .headline {
+    margin: 5% 0 0 7%;
+    width: 40vw;
+    border-bottom: 1px solid $green;
+    position: relative;
+  }
 
-  &_border {
-    border: 3px solid;
-    border-color: $light_green white;
-    padding: 10px 0;
+  .headline::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    right: 0;
+    background-color: $green;
+    height: 6px;
+    width: 6px;
+    border-radius: 5px;
+  }
 
-    &_grids {
-      background-image: url("images/dempsey_headerTestImage.png");
-      background-position: 100%;
-      position: relative;
-      min-height: 300px;
+  &_wrapper {
+    @include base_grid;
 
-      .service_title {
-        background: white;
-        padding: 3% 7%;
-        width: 80%;
-        position: absolute;
-        bottom: 0;
-        font-size: $link_fontsize;
+    grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+    grid-gap: 70px;
+    grid-row-gap: 100px;
+    margin: 7%;
 
-        span {
-          background-color: $green;
-          width: 100px;
-          height: 2px;
+    &_border {
+      // border: 3px solid;
+      // border-color: $light_green white;
+      // padding: 10px 0;
+
+      &_grids {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 300px;
+
+        .service_title {
+          background: white;
+          padding: 3% 3% 3% 0;
+          width: 80%;
           position: absolute;
-          top: 50%;
-          margin-left: 2%;
+          bottom: 0;
+          font-size: calc(18px + 0.3vw);
+          letter-spacing: 1px;
+          line-height: 1.1;
+          z-index: 1;
+
+          // span {
+          //   background-color: $green;
+          //   width: 100px;
+          //   height: 2px;
+          //   position: absolute;
+          //   top: 50%;
+          //   margin-left: 2%;
+          // }
+          //
+          // span::after {
+          //   content: '';
+          //   position: absolute;
+          //   top: -2.5px;
+          //   right: 0;
+          //   background-color: $green;
+          //   height: 5px;
+          //   width: 5px;
+          //   border-radius: 5px;
+          // }
         }
 
-        span::after {
-          content: '';
-          position: absolute;
-          top: -2.5px;
-          right: 0;
-          background-color: $green;
-          height: 5px;
-          width: 5px;
-          border-radius: 5px;
+        &_content {
+          display: none;
         }
       }
 
-      &_content {
-        // display: none;
+      .design {
+        background-image: url('images/dempsey_testbg.png');
+      }
+
+      .permitting {
+        background-image: url('src/images/Ty Dempsey - ');
+      }
+
+      .master_plan {
+        background-image: url('src/images/Ty Dempsey - Master Planning.jpg');
+      }
+
+      .construction {
+        background-image: url('src/images/Ty Dempsey - Construction.jpg');
+      }
+
+      .commercial {
+        background-image: url('src/images/Ty Dempsey - Commercial.jpg');
+      }
+
+      .industrial {
+        background-image: url('src/images/Ty Dempsey - Industrial and Municipal.jpg');
+      }
+
+      .residential {
+        background-image: url('src/images/Ty Dempsey - Residential.jpg');
+      }
+
+      .agricultural {
+        background-image: url('src/images/Ty Dempsey - Agricultural.jpg');
+      }
+
+      .utilities {
+        background-image: url('src/images/Ty Dempsey - ');
+      }
+
+      .floodplain {
+        background-image: url('src/images/Ty Dempsey - Floodplain Management.jpg');
+      }
+
+      .erosion {
+        background-image: url('src/images/Ty Dempsey - ');
+      }
+
+      .stormwater {
+        background-image: url('src/images/Ty Dempsey - Storm Water Quality.jpg');
+      }
+
+      &_grids:hover {
+        .service_title {
+          bottom: unset;
+          background-color: transparent;
+          padding-top: 7%;
+        }
+
+        .services_content_wrapper_border_grids_content {
+          @include service_grid_hover;
+
+          .hover_background {
+            span {
+              width: 1px;
+              min-height: 300px;
+              position: absolute;
+              background-color: rgba(0, 0, 0, 0.05);
+              top: 0;
+            }
+
+            span:nth-child(2) {
+              left: 50%;
+            }
+
+            span:nth-child(3) {
+              right: 7%;
+            }
+          }
+        }
       }
     }
   }

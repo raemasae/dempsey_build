@@ -25,13 +25,24 @@
 //base margin
 $base_margin: 0 7%;
 
-//base grid
+//grids and layouts
 @mixin base_grid {
   @include prefix((
     display: grid,
     grid-template-columns: repeat(6, 1fr),
     grid-template-rows: repeat(2, 1fr),
     grid-gap: 2%), webkit ms moz);
+}
+
+@mixin service_grid_hover {
+  min-height: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-left: 7%;
 }
 
 //base colors
