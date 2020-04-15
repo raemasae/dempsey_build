@@ -380,27 +380,27 @@ p {
   .services_content_wrapper_border .design {
     background-image: url("images/dempsey_testbg.png"); }
   .services_content_wrapper_border .permitting {
-    background-image: url("images/Ty Dempsey - "); }
+    background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .master_plan {
-    background-image: url("images/Ty Dempsey - Master Planning.jpg"); }
+    background-image: url("images/Dempsey_MasterPlanning.jpg"); }
   .services_content_wrapper_border .construction {
-    background-image: url("images/Ty Dempsey - Construction.jpg"); }
+    background-image: url("images/Dempsey_Construction.jpg"); }
   .services_content_wrapper_border .commercial {
-    background-image: url("images/Ty Dempsey - Commercial.jpg"); }
+    background-image: url("images/Dempsey_Commercial.jpg"); }
   .services_content_wrapper_border .industrial {
-    background-image: url("images/Ty Dempsey - Industrial and Municipal.jpg"); }
+    background-image: url("images/Dempsey_IndustrialMunicipal.jpg"); }
   .services_content_wrapper_border .residential {
-    background-image: url("images/Ty Dempsey - Residential.jpg"); }
+    background-image: url("images/Dempsey_Residential.jpg"); }
   .services_content_wrapper_border .agricultural {
-    background-image: url("images/Ty Dempsey - Agricultural.jpg"); }
+    background-image: url("images/Dempsey_Agricultural.jpg"); }
   .services_content_wrapper_border .utilities {
-    background-image: url("images/Ty Dempsey - "); }
+    background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .floodplain {
-    background-image: url("images/Ty Dempsey - Floodplain Management.jpg"); }
+    background-image: url("images/Dempsey_FloodplainManagement.jpg"); }
   .services_content_wrapper_border .erosion {
-    background-image: url("images/Ty Dempsey - "); }
+    background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .stormwater {
-    background-image: url("images/Ty Dempsey - Storm Water Quality.jpg"); }
+    background-image: url("images/Dempsey_StormWaterQuality.jpg"); }
   .services_content_wrapper_border_grids:hover .service_title {
     -webkit-animation: service_hover_title 1s;
     -ms-animation: service_hover_title 1s;
