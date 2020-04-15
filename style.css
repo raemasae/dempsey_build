@@ -101,7 +101,8 @@ p {
   padding: 1% 0 0 3%;
   display: inline-flex;
   justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 4px; }
   .header_logo img {
     width: 150px; }
   .header nav {
