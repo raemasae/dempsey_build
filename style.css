@@ -1,9 +1,4 @@
 @font-face{
-  font-family: Anton;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Anton Regular"),local(Anton-Regular),url(//fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2) format("woff2"),url(//fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff) format("woff"); }
-@font-face{
   font-family: "Merriweather Sans";
   font-style: italic;
   font-weight: 300;
@@ -43,15 +38,46 @@
   font-style: normal;
   font-weight: 800;
   src: local("Merriweather Sans ExtraBold"),local(MerriweatherSans-ExtraBold),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowQcrWKLI4rh04OfjsZvU_LE.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowSdYkh4h72QvAQSOPbRA0ug.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowWT7sFQ1Iz1BbpcuCPlgc9Q.woff) format("woff"); }
+@font-face{
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Anton Regular"),local(Anton-Regular),url(//fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2) format("woff2"),url(//fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff) format("woff"); }
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
-* {
-  box-sizing: border-box;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+fieldset,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
   margin: 0;
   padding: 0;
-  font-family: 'Merriweather Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1;
-  background-repeat: no-repeat; }
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  line-height: 1; }
+
+h1,
+h2,
+p {
+  font-size: 18px; }
 
 h1 {
   font-size: calc(18px + 2.6vw);
