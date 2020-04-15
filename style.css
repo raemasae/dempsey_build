@@ -380,27 +380,27 @@ p {
   .services_content_wrapper_border .design {
     background-image: url("images/dempsey_testbg.png"); }
   .services_content_wrapper_border .permitting {
-    background-image: url("images/Dempsey_"); }
+    background-image: url("images/Dempsey_Permitting_small.png"); }
   .services_content_wrapper_border .master_plan {
-    background-image: url("images/Dempsey_MasterPlanning.jpg"); }
+    background-image: url("images/Dempsey_MasterPlanning_small.jpg"); }
   .services_content_wrapper_border .construction {
-    background-image: url("images/Dempsey_Construction.jpg"); }
+    background-image: url("images/Dempsey_Construction_small.jpg"); }
   .services_content_wrapper_border .commercial {
-    background-image: url("images/Dempsey_Commercial.jpg"); }
+    background-image: url("images/Dempsey_Commercial_small.jpg"); }
   .services_content_wrapper_border .industrial {
-    background-image: url("images/Dempsey_IndustrialMunicipal.jpg"); }
+    background-image: url("images/Dempsey_IndustrialMunicipal_small.jpg"); }
   .services_content_wrapper_border .residential {
-    background-image: url("images/Dempsey_Residential.jpg"); }
+    background-image: url("images/Dempsey_Residential_small.jpg"); }
   .services_content_wrapper_border .agricultural {
-    background-image: url("images/Dempsey_Agricultural.jpg"); }
+    background-image: url("images/Dempsey_Agricultural_small.jpg"); }
   .services_content_wrapper_border .utilities {
     background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .floodplain {
-    background-image: url("images/Dempsey_FloodplainManagement.jpg"); }
+    background-image: url("images/Dempsey_FloodplainManagement_small.jpg"); }
   .services_content_wrapper_border .erosion {
     background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .stormwater {
-    background-image: url("images/Dempsey_StormWaterQuality.jpg"); }
+    background-image: url("images/Dempsey_StormWaterQuality_small.jpg"); }
   .services_content_wrapper_border_grids:hover .service_title {
     -webkit-animation: service_hover_title 1s;
     -ms-animation: service_hover_title 1s;
