@@ -1,0 +1,455 @@
+@font-face{
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Anton Regular"),local(Anton-Regular),url(//fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2) format("woff2"),url(//fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Merriweather Sans Light Italic"),local(MerriweatherSans-LightItalic),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVUj5MoXaAlgVrZoSSZbYcLk.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVVyxQjJdVDgrQF1Nc7eshrI.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVX9UU5BmOJGkLxUCVv5VXdc.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Merriweather Sans Italic"),local(MerriweatherSans-Italic),url(//fonts.gstatic.com/s/merriweathersans/v8/3Mz4hOHzs2npRMG3B1ascT73cJzAx8H21t3siz5PJJM.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/3Mz4hOHzs2npRMG3B1ascefU2ka509O1odprhyXBUMU.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/3Mz4hOHzs2npRMG3B1ascf0KIgDhPIHb_R-SWdtqte8.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Merriweather Sans Bold Italic"),local(MerriweatherSans-BoldItalic),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVQHKcHgsjoggO6IrKqD_mBM.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVafo0sDQ75c9ExQ-26lwTdA.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVYM8pfYvjMoOxygpzLVILAs.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: local("Merriweather Sans ExtraBold Italic"),local(MerriweatherSans-ExtraBoldItalic),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVcH0I4tMsnbbth0OMeUPnb0.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVfrUSW10CwTuVx9PepRx9ls.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/nAqt4hiqwq3tzCecpgPmVW2xy75WLVt7UI7Cycabsy8.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Merriweather Sans Light"),local(MerriweatherSans-Light),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowdYASHgfgyB7g8BNe7pvKXk.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowQaqY1RzDqUCoj4OhtiyHDU.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowY_zIojJi0m4a5Z6tRh6itY.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Merriweather Sans"),local(MerriweatherSans-Regular),url(//fonts.gstatic.com/s/merriweathersans/v8/AKu1CjQ4qnV8MUltkAX3sE2k4ogKuXZ6cvJ9G6hiscg.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/AKu1CjQ4qnV8MUltkAX3sMZ4HySTEWshgORbPp2tk8k.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/AKu1CjQ4qnV8MUltkAX3sL2aU247V0zTzydO4RoO9Ok.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Merriweather Sans Bold"),local(MerriweatherSans-Bold),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowaD2fnm4z6Nq0x6aGUXpBdU.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowbvMLSVzqOGkoxdgTSsKqWM.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowQfd-b-I5PxxcmB4_-MNcqw.woff) format("woff"); }
+@font-face{
+  font-family: "Merriweather Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Merriweather Sans ExtraBold"),local(MerriweatherSans-ExtraBold),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowQcrWKLI4rh04OfjsZvU_LE.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowSdYkh4h72QvAQSOPbRA0ug.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowWT7sFQ1Iz1BbpcuCPlgc9Q.woff) format("woff"); }
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  background-repeat: no-repeat; }
+
+h1 {
+  font-size: calc(18px + 2.6vw);
+  font-family: "Anton", serif;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  color: #355426; }
+
+h2 {
+  font-size: calc(18px + 1vw);
+  font-family: "Anton", serif;
+  letter-spacing: 0.5px;
+  color: #5f5f5f; }
+
+p {
+  font-weight: 100;
+  color: #5f5f5f;
+  line-height: 1.7; }
+
+.header {
+  padding: 1% 0 0 3%;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%; }
+  .header_logo img {
+    width: 150px; }
+  .header nav {
+    width: 100%;
+    height: 72px;
+    margin-left: 2%;
+    border-bottom: 4px solid grey; }
+    .header nav ul {
+      width: 100%;
+      height: 72px;
+      display: inline-flex;
+      justify-content: flex-end; }
+      .header nav ul li {
+        list-style: none;
+        margin-right: 1%;
+        align-self: flex-end;
+        padding: 0 2% 10px; }
+        .header nav ul li a {
+          text-decoration: none;
+          color: #355426;
+          font-family: "Anton", serif;
+          font-size: calc(18px + 0.5vw); }
+      .header nav ul li:nth-child(2) {
+        margin-right: 5%; }
+      .header nav ul li:hover {
+        background-color: white; }
+        .header nav ul li:hover a {
+          border-bottom: 4px solid #8cd360;
+          color: #8cd360; }
+
+.intro {
+  background-image: url("images/dempsey_headerTestImage@2x.png");
+  background-size: cover;
+  height: 75vh;
+  padding: 0 7%; }
+  .intro_head {
+    -webkit-display: grid;
+    -ms-display: grid;
+    -moz-display: grid;
+    display: grid;
+    -webkit-grid-template-columns: repeat(6, 1fr);
+    -ms-grid-template-columns: repeat(6, 1fr);
+    -moz-grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    -webkit-grid-template-rows: repeat(2, 1fr);
+    -ms-grid-template-rows: repeat(2, 1fr);
+    -moz-grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-grid-gap: 2%;
+    -ms-grid-gap: 2%;
+    -moz-grid-gap: 2%;
+    grid-gap: 2%;
+    grid-template-areas: "headline headline ...." "main_button main_button ....";
+    height: 100%;
+    padding: 10% 0;
+    grid-row-gap: 30px; }
+    .intro_head .headline {
+      grid-area: headline;
+      width: auto; }
+    .intro_head .main_button {
+      background-color: #8cd360;
+      color: #355426;
+      padding: 3% 10%;
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 100;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      box-shadow: 0 3px 6px #c7c6c6;
+      grid-area: main_button;
+      width: 60%;
+      height: 48px; }
+    .intro_head .main_button:hover {
+      background-color: #80c554; }
+    .intro_head .main_button:active {
+      box-shadow: none;
+      border: 1px solid;
+      border-color: grey whitesmoke whitesmoke grey; }
+
+.intro_content {
+  padding: 7%; }
+  .intro_content_row {
+    -webkit-display: grid;
+    -ms-display: grid;
+    -moz-display: grid;
+    display: grid;
+    -webkit-grid-template-columns: repeat(6, 1fr);
+    -ms-grid-template-columns: repeat(6, 1fr);
+    -moz-grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    -webkit-grid-template-rows: repeat(2, 1fr);
+    -ms-grid-template-rows: repeat(2, 1fr);
+    -moz-grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-grid-gap: 2%;
+    -ms-grid-gap: 2%;
+    -moz-grid-gap: 2%;
+    grid-gap: 2%;
+    grid-template-rows: repeat(2, auto); }
+    .intro_content_row .headline {
+      grid-column: 1 / 4;
+      margin-right: 20%;
+      margin-bottom: 15%;
+      border-bottom: 1px solid #355426;
+      position: relative; }
+    .intro_content_row .headline_line::after {
+      content: '';
+      position: absolute;
+      bottom: -3px;
+      right: 0;
+      background-color: #355426;
+      height: 6px;
+      width: 6px;
+      border-radius: 5px; }
+    .intro_content_row .subhead {
+      grid-column: 1 / 3;
+      grid-row: 2; }
+    .intro_content_row .paragraph {
+      margin-bottom: 10%;
+      grid-row: 2;
+      margin-right: 5%; }
+    .intro_content_row .one {
+      grid-column: 3 / 5; }
+    .intro_content_row .two {
+      grid-column: 5 / 7; }
+
+.intro_content.content_two {
+  background-image: url("images/dempsey_testbg@2x.png");
+  background-size: cover; }
+  .intro_content.content_two .intro_content_row .headline {
+    grid-column: 2 / 6;
+    border-bottom: none;
+    margin-bottom: 3%;
+    text-align: center;
+    margin-right: 0; }
+  .intro_content.content_two .intro_content_row .three {
+    grid-column: 2 / 6;
+    text-align: center;
+    margin-right: 0; }
+
+.contact_form {
+  width: 40vw;
+  margin: 0 auto;
+  margin-left: 7%;
+  display: flex;
+  flex-flow: column;
+  align-self: center; }
+  .contact_form form {
+    display: flex;
+    flex-flow: column;
+    width: 100%; }
+    .contact_form form label {
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 100;
+      margin-bottom: 5px; }
+    .contact_form form input {
+      margin-bottom: 15px;
+      padding: 1%;
+      width: 70%;
+      font-size: 16px; }
+    .contact_form form textarea {
+      width: 70%;
+      height: 150px;
+      border-color: #d4d2d2;
+      font-size: 16px;
+      margin-bottom: 15px; }
+    .contact_form form .main_button {
+      background-color: #8cd360;
+      color: #355426;
+      padding: 3% 10%;
+      font-family: "Merriweather Sans", sans-serif;
+      font-weight: 100;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-align: center;
+      border: none;
+      box-shadow: 0 3px 6px #c7c6c6; }
+    .contact_form form .main_button:hover {
+      background-color: #80c554; }
+    .contact_form form .main_button:active {
+      box-shadow: none;
+      border: 1px solid;
+      border-color: grey whitesmoke whitesmoke grey; }
+
+.contact_header_image {
+  background-image: url("src/images/manoa_backside.jpg");
+  background-size: 100%;
+  width: 100%;
+  height: 50vh;
+  background-position: left top; }
+
+.contact .header nav ul .selected a,
+.services .header nav ul .selected a {
+  color: #8cd360; }
+
+.contact .contact_intro,
+.services .contact_intro {
+  display: flex;
+  justify-content: space-between; }
+  .contact .contact_intro .contact_form_title .subhead,
+  .services .contact_intro .contact_form_title .subhead {
+    color: #355426; }
+  .contact .contact_intro .contact_form_address,
+  .services .contact_intro .contact_form_address {
+    margin: 5% 0 10%; }
+    .contact .contact_intro .contact_form_address p:last-child,
+    .services .contact_intro .contact_form_address p:last-child {
+      margin-top: 20px; }
+  .contact .contact_intro .contact_map_image img,
+  .services .contact_intro .contact_map_image img {
+    width: 60vw;
+    height: 75vh;
+    object-fit: cover; }
+
+.services_header_image {
+  background-image: url("src/images/AdobeStock_270324096_Preview.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh; }
+
+.services_content .headline {
+  margin: 5% 0 0 7%;
+  width: 40vw;
+  border-bottom: 1px solid #355426;
+  position: relative; }
+
+.services_content .headline::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  right: 0;
+  background-color: #355426;
+  height: 6px;
+  width: 6px;
+  border-radius: 5px; }
+
+.services_content_wrapper {
+  -webkit-display: grid;
+  -ms-display: grid;
+  -moz-display: grid;
+  display: grid;
+  -webkit-grid-template-columns: repeat(6, 1fr);
+  -ms-grid-template-columns: repeat(6, 1fr);
+  -moz-grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-grid-template-rows: repeat(2, 1fr);
+  -ms-grid-template-rows: repeat(2, 1fr);
+  -moz-grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -webkit-grid-gap: 2%;
+  -ms-grid-gap: 2%;
+  -moz-grid-gap: 2%;
+  grid-gap: 2%;
+  grid-template-columns: repeat(auto-fit, minmax(425px, 1fr));
+  grid-gap: 70px;
+  grid-row-gap: 100px;
+  margin: 7%; }
+  .services_content_wrapper_border_grids {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden; }
+    .services_content_wrapper_border_grids .service_title {
+      background-color: white;
+      padding: 3% 3% 3% 0;
+      width: 80%;
+      position: absolute;
+      bottom: 0;
+      font-size: calc(18px + 0.3vw);
+      letter-spacing: 1px;
+      line-height: 1.1;
+      z-index: 1;
+      padding-left: 5px; }
+    .services_content_wrapper_border_grids_content {
+      display: none; }
+  .services_content_wrapper_border .design {
+    background-image: url("images/dempsey_testbg.png"); }
+  .services_content_wrapper_border .permitting {
+    background-image: url("src/images/Ty Dempsey - "); }
+  .services_content_wrapper_border .master_plan {
+    background-image: url("src/images/Ty Dempsey - Master Planning.jpg"); }
+  .services_content_wrapper_border .construction {
+    background-image: url("src/images/Ty Dempsey - Construction.jpg"); }
+  .services_content_wrapper_border .commercial {
+    background-image: url("src/images/Ty Dempsey - Commercial.jpg"); }
+  .services_content_wrapper_border .industrial {
+    background-image: url("src/images/Ty Dempsey - Industrial and Municipal.jpg"); }
+  .services_content_wrapper_border .residential {
+    background-image: url("src/images/Ty Dempsey - Residential.jpg"); }
+  .services_content_wrapper_border .agricultural {
+    background-image: url("src/images/Ty Dempsey - Agricultural.jpg"); }
+  .services_content_wrapper_border .utilities {
+    background-image: url("src/images/Ty Dempsey - "); }
+  .services_content_wrapper_border .floodplain {
+    background-image: url("src/images/Ty Dempsey - Floodplain Management.jpg"); }
+  .services_content_wrapper_border .erosion {
+    background-image: url("src/images/Ty Dempsey - "); }
+  .services_content_wrapper_border .stormwater {
+    background-image: url("src/images/Ty Dempsey - Storm Water Quality.jpg"); }
+  .services_content_wrapper_border_grids:hover .service_title {
+    -webkit-animation: service_hover_title 1s;
+    -ms-animation: service_hover_title 1s;
+    -moz-animation: service_hover_title 1s;
+    animation: service_hover_title 1s;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-color: transparent;
+    color: white; }
+
+@keyframes service_hover_title {
+  0% {
+    bottom: 0;
+    height: 50px; }
+  100% {
+    height: 300px; } }
+  .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content {
+    min-height: 300px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-left: 7%;
+    -webkit-animation: service_hover 1s;
+    -ms-animation: service_hover 1s;
+    -moz-animation: service_hover 1s;
+    animation: service_hover 1s;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+
+@keyframes service_hover {
+  0% {
+    height: 0;
+    top: calc(100% - 50px);
+    opacity: 0; }
+  100% {
+    height: 100%;
+    top: 0;
+    opacity: 100%; } }
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span {
+      width: 1px;
+      min-height: 300px;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.21);
+      top: 0; }
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
+      left: 50%; }
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
+      right: 7%; }
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p {
+      color: white;
+      font-size: 16px; }
+
+.footer {
+  background-color: #355426;
+  padding: 3%; }
+  .footer_content {
+    text-align: center; }
+    .footer_content img {
+      width: 100px;
+      margin-bottom: 30px; }
+    .footer_content p,
+    .footer_content a {
+      color: white;
+      font-size: 15px;
+      margin-bottom: 7px; }
+    .footer_content .phone {
+      margin-bottom: 30px; }
+    .footer_content .credentials {
+      font-size: 11px; }
