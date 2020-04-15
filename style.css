@@ -261,7 +261,7 @@ p {
       border-color: grey whitesmoke whitesmoke grey; }
 
 .contact_header_image {
-  background-image: url("src/images/manoa_backside.jpg");
+  background-image: url("images/manoa_backside.jpg");
   background-size: 100%;
   width: 100%;
   height: 50vh;
@@ -291,7 +291,7 @@ p {
     object-fit: cover; }
 
 .services_header_image {
-  background-image: url("src/images/AdobeStock_270324096_Preview.jpeg");
+  background-image: url("images/AdobeStock_270324096_Preview.jpeg");
   background-size: cover;
   background-position: center;
   height: 50vh; }
@@ -355,27 +355,27 @@ p {
   .services_content_wrapper_border .design {
     background-image: url("images/dempsey_testbg.png"); }
   .services_content_wrapper_border .permitting {
-    background-image: url("src/images/Ty Dempsey - "); }
+    background-image: url("images/Ty Dempsey - "); }
   .services_content_wrapper_border .master_plan {
-    background-image: url("src/images/Ty Dempsey - Master Planning.jpg"); }
+    background-image: url("images/Ty Dempsey - Master Planning.jpg"); }
   .services_content_wrapper_border .construction {
-    background-image: url("src/images/Ty Dempsey - Construction.jpg"); }
+    background-image: url("images/Ty Dempsey - Construction.jpg"); }
   .services_content_wrapper_border .commercial {
-    background-image: url("src/images/Ty Dempsey - Commercial.jpg"); }
+    background-image: url("images/Ty Dempsey - Commercial.jpg"); }
   .services_content_wrapper_border .industrial {
-    background-image: url("src/images/Ty Dempsey - Industrial and Municipal.jpg"); }
+    background-image: url("images/Ty Dempsey - Industrial and Municipal.jpg"); }
   .services_content_wrapper_border .residential {
-    background-image: url("src/images/Ty Dempsey - Residential.jpg"); }
+    background-image: url("images/Ty Dempsey - Residential.jpg"); }
   .services_content_wrapper_border .agricultural {
-    background-image: url("src/images/Ty Dempsey - Agricultural.jpg"); }
+    background-image: url("images/Ty Dempsey - Agricultural.jpg"); }
   .services_content_wrapper_border .utilities {
-    background-image: url("src/images/Ty Dempsey - "); }
+    background-image: url("images/Ty Dempsey - "); }
   .services_content_wrapper_border .floodplain {
-    background-image: url("src/images/Ty Dempsey - Floodplain Management.jpg"); }
+    background-image: url("images/Ty Dempsey - Floodplain Management.jpg"); }
   .services_content_wrapper_border .erosion {
-    background-image: url("src/images/Ty Dempsey - "); }
+    background-image: url("images/Ty Dempsey - "); }
   .services_content_wrapper_border .stormwater {
-    background-image: url("src/images/Ty Dempsey - Storm Water Quality.jpg"); }
+    background-image: url("images/Ty Dempsey - Storm Water Quality.jpg"); }
   .services_content_wrapper_border_grids:hover .service_title {
     -webkit-animation: service_hover_title 1s;
     -ms-animation: service_hover_title 1s;
