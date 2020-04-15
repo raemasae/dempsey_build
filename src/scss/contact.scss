@@ -6,20 +6,7 @@
   background-position: left top;
 }
 
-.contact,
-.services {
-  .header {
-    nav {
-      ul {
-        .selected {
-          a {
-            color: $light_green;
-          }
-        }
-      }
-    }
-  }
-
+.contact {
   .contact_intro {
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,9 @@
 @font-face{
+  font-family: Anton;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Anton Regular"),local(Anton-Regular),url(//fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2) format("woff2"),url(//fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff) format("woff"); }
+@font-face{
   font-family: "Merriweather Sans";
   font-style: italic;
   font-weight: 300;
@@ -38,11 +43,6 @@
   font-style: normal;
   font-weight: 800;
   src: local("Merriweather Sans ExtraBold"),local(MerriweatherSans-ExtraBold),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowQcrWKLI4rh04OfjsZvU_LE.eot?#) format("eot"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowSdYkh4h72QvAQSOPbRA0ug.woff2) format("woff2"),url(//fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowWT7sFQ1Iz1BbpcuCPlgc9Q.woff) format("woff"); }
-@font-face{
-  font-family: Anton;
-  font-style: normal;
-  font-weight: 400;
-  src: local("Anton Regular"),local(Anton-Regular),url(//fonts.gstatic.com/s/anton/v8/J56qdu2k8bTBzqj6o9e_cQ.eot?#) format("eot"),url(//fonts.gstatic.com/s/anton/v8/o-91-t7-bPc7W26HmS2N4Q.woff2) format("woff2"),url(//fonts.gstatic.com/s/anton/v8/tilmJBBU81h1G7ZsdY3Hmw.woff) format("woff"); }
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Merriweather+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap");
 html,
 body,
@@ -72,7 +72,9 @@ section {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
-  line-height: 1; }
+  background-repeat: no-repeat;
+  line-height: 1;
+  font-family: 'Merriweather Sans', sans-serif; }
 
 h1,
 h2,
@@ -114,11 +116,14 @@ p {
       width: 100%;
       height: 72px;
       display: inline-flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      position: relative; }
       .header nav ul li {
         list-style: none;
         align-self: flex-end;
-        padding: 0 2% 10px; }
+        padding: 0 2% 10px;
+        position: relative;
+        bottom: -4px; }
         .header nav ul li a {
           text-decoration: none;
           color: #355426;
@@ -131,6 +136,8 @@ p {
         .header nav ul li:hover a {
           border-bottom: 4px solid #8cd360;
           color: #8cd360; }
+      .header nav ul .selected a {
+        color: #8cd360; }
 
 .intro {
   background-image: url("images/dempsey_headerTestImage@2x.png");
@@ -294,25 +301,16 @@ p {
   height: 50vh;
   background-position: left top; }
 
-.contact .header nav ul .selected a,
-.services .header nav ul .selected a {
-  color: #8cd360; }
-
-.contact .contact_intro,
-.services .contact_intro {
+.contact .contact_intro {
   display: flex;
   justify-content: space-between; }
-  .contact .contact_intro .contact_form_title .subhead,
-  .services .contact_intro .contact_form_title .subhead {
+  .contact .contact_intro .contact_form_title .subhead {
     color: #355426; }
-  .contact .contact_intro .contact_form_address,
-  .services .contact_intro .contact_form_address {
+  .contact .contact_intro .contact_form_address {
     margin: 5% 0 10%; }
-    .contact .contact_intro .contact_form_address p:last-child,
-    .services .contact_intro .contact_form_address p:last-child {
+    .contact .contact_intro .contact_form_address p:last-child {
       margin-top: 20px; }
-  .contact .contact_intro .contact_map_image img,
-  .services .contact_intro .contact_map_image img {
+  .contact .contact_intro .contact_map_image img {
     width: 60vw;
     height: 75vh;
     object-fit: cover; }
@@ -420,7 +418,7 @@ p {
     bottom: 0;
     height: 50px; }
   100% {
-    height: 300px; } }
+    height: calc(300px - (50px + 6%)); } }
   .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content {
     min-height: 300px;
     background-color: rgba(0, 0, 0, 0.4);

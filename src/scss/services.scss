@@ -147,7 +147,7 @@
             }
 
             100% {
-              height: 300px;
+              height: calc(300px - (50px + 6%));
             }
           }
         }

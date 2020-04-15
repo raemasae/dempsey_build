@@ -22,12 +22,15 @@
       height: 72px;
       display: inline-flex;
       justify-content: flex-end;
+      position: relative;
 
       li {
         list-style: none;
         // margin-right: 1%;
         align-self: flex-end;
         padding: 0 2% 10px;
+        position: relative;
+        bottom: -4px;
 
         a {
           text-decoration: none;
@@ -46,6 +49,12 @@
 
         a {
           border-bottom: 4px solid $light_green;
+          color: $light_green;
+        }
+      }
+
+      .selected {
+        a {
           color: $light_green;
         }
       }
