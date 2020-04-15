@@ -182,7 +182,8 @@ p {
       box-shadow: 0 3px 6px #c7c6c6;
       grid-area: main_button;
       width: 60%;
-      height: 48px; }
+      height: 48px;
+      line-height: 48px; }
     .intro_head .main_button:hover {
       background-color: #80c554; }
     .intro_head .main_button:active {
