@@ -468,6 +468,8 @@ p {
     .footer_content img {
       width: 100px;
       margin-bottom: 30px; }
+    .footer_content p {
+      line-height: 1.5; }
     .footer_content p,
     .footer_content a {
       color: white;
