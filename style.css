@@ -163,7 +163,6 @@ p {
     -moz-grid-gap: 2%;
     grid-gap: 2%;
     grid-template-areas: "headline headline ...." "main_button main_button ....";
-    height: 100%;
     padding: 10% 0;
     grid-row-gap: 30px; }
     .intro_head .headline {
@@ -298,8 +297,7 @@ p {
 
 .contact_header_image {
   background-image: url("images/manoa_backside_small.jpg");
-  background-size: 100%;
-  width: 100%;
+  background-size: cover;
   height: 50vh;
   background-position: left top; }
 
@@ -457,7 +455,7 @@ p {
     .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
       left: 50%; }
     .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
-      right: 7%; }
+      right: 14%; }
     .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p {
       color: white;
       font-size: 16px; }

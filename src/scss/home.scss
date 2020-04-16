@@ -8,7 +8,6 @@
     @include base_grid;
 
     grid-template-areas: "headline headline ...." "main_button main_button ....";
-    height: 100%;
     padding: 10% 0;
     grid-row-gap: 30px;
 
