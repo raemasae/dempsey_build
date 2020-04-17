@@ -147,6 +147,7 @@ p {
 .intro {
   background-image: url("images/home_test.jpeg");
   background-size: cover;
+  background-position: center;
   height: 60vh;
   padding: 0 7%; }
   .intro_head {
