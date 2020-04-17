@@ -576,7 +576,7 @@ p {
       .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p:last-child {
         margin-bottom: 20px; }
   .footer {
-    width: calc(100% - 8%);
+    width: calc(100% - 6%);
     padding: 7% 3%; }
     .footer_content img {
       width: 70px; } }
