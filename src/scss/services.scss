@@ -134,7 +134,6 @@
       }
 
       &_grids:hover,
-      &_grid:focus,
       &_grid:active {
         .service_title {
           @include prefix((

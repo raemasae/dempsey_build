@@ -186,8 +186,7 @@
         }
 
         &_grids:hover,
-        &_grids:active,
-        &_grids:focus {
+        &_grids:active {
           @keyframes service_hover_title {
             0% {
               bottom: 0;
