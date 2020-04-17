@@ -407,7 +407,7 @@ p {
     background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .stormwater {
     background-image: url("images/Dempsey_StormWaterQuality_small.jpg"); }
-  .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grid:active .service_title {
+  .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grids:active .service_title {
     -webkit-animation: service_hover_title 1s;
     -ms-animation: service_hover_title 1s;
     -moz-animation: service_hover_title 1s;
@@ -425,7 +425,7 @@ p {
     height: 50px; }
   100% {
     height: calc(300px - 6%); } }
-  .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content {
+  .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content {
     min-height: 300px;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -452,17 +452,17 @@ p {
     height: 100%;
     top: 0;
     opacity: 100%; } }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content .hover_background span {
       width: 1px;
       min-height: 300px;
       position: absolute;
       background-color: rgba(255, 255, 255, 0.21);
       top: 0; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2), .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2), .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
       left: 50%; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
       right: 14%; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content p {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content p {
       color: white;
       font-size: 16px; }
 

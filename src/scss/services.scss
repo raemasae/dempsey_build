@@ -134,7 +134,7 @@
       }
 
       &_grids:hover,
-      &_grid:active {
+      &_grids:active {
         .service_title {
           @include prefix((
             animation: service_hover_title 1s,
