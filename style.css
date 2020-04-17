@@ -280,7 +280,7 @@ p {
       border-color: #d4d2d2;
       font-size: 16px;
       margin-bottom: 15px; }
-    .contact_form form .main_button {
+    .contact_form form input.main_button {
       background-color: #8cd360;
       color: #355426;
       padding: 3% 10%;
@@ -291,9 +291,9 @@ p {
       text-align: center;
       border: none;
       box-shadow: 0 3px 6px #c7c6c6; }
-    .contact_form form .main_button:hover {
+    .contact_form form input.main_button:hover {
       background-color: #80c554; }
-    .contact_form form .main_button:active {
+    .contact_form form input.main_button:active {
       box-shadow: none;
       border: 1px solid;
       border-color: grey whitesmoke whitesmoke grey; }

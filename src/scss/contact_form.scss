@@ -32,15 +32,15 @@
       margin-bottom: 15px;
     }
 
-    .main_button {
+    input.main_button {
       @include button;
     }
 
-    .main_button:hover {
+    input.main_button:hover {
       background-color: #80c554;
     }
 
-    .main_button:active {
+    input.main_button:active {
       @include button_click;
     }
   }
