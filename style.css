@@ -424,7 +424,7 @@ p {
     bottom: 0;
     height: 50px; }
   100% {
-    height: calc(300px - (50px + 6%)); } }
+    height: calc(300px - 6%); } }
   .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content {
     min-height: 300px;
     background-color: rgba(0, 0, 0, 0.4);
