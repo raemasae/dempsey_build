@@ -82,14 +82,15 @@ h2,
 p {
   font-size: 18px; }
 
-h1 {
+h1,
+h2 {
   font-size: calc(18px + 2.6vw);
   font-family: "Anton", serif;
   line-height: 1.2;
   letter-spacing: 1px;
   color: #355426; }
 
-h2 {
+h3 {
   font-size: calc(18px + 1vw);
   font-family: "Anton", serif;
   letter-spacing: 0.5px;
@@ -144,9 +145,9 @@ p {
     display: none; }
 
 .intro {
-  background-image: url("images/dempsey_headerTestImage@2x.png");
+  background-image: url("images/home_test.jpeg");
   background-size: cover;
-  height: 75vh;
+  height: 60vh;
   padding: 0 7%; }
   .intro_head {
     -webkit-display: grid;
@@ -216,7 +217,6 @@ p {
     grid-template-rows: repeat(2, auto); }
     .intro_content_row .headline {
       grid-column: 1 / 4;
-      margin-right: 20%;
       margin-bottom: 15%;
       border-bottom: 1px solid #355426;
       position: relative; }
@@ -321,7 +321,7 @@ p {
     object-fit: cover; }
 
 .services_header_image {
-  background-image: url("images/AdobeStock_270324096_Preview.jpeg");
+  background-image: url("images/design_test");
   background-size: cover;
   background-position: center;
   height: 50vh; }
