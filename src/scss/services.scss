@@ -130,7 +130,8 @@
         background-image: url('images/Dempsey_StormWaterQuality_small.jpg');
       }
 
-      &_grids:hover {
+      &_grids:hover,
+      &_grid:focus {
         .service_title {
           @include prefix((
             animation: service_hover_title 1s,
