@@ -103,7 +103,7 @@ p {
   padding: 1% 0 0 3%;
   display: inline-flex;
   justify-content: space-between;
-  width: 100%;
+  width: calc(100% - 3%);
   margin-bottom: 4px; }
   .header_logo img {
     width: 150px; }
@@ -403,7 +403,7 @@ p {
     background-image: url("images/Dempsey_"); }
   .services_content_wrapper_border .stormwater {
     background-image: url("images/Dempsey_StormWaterQuality_small.jpg"); }
-  .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grid:focus .service_title {
+  .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grid:focus .service_title, .services_content_wrapper_border_grid:active .service_title {
     -webkit-animation: service_hover_title 1s;
     -ms-animation: service_hover_title 1s;
     -moz-animation: service_hover_title 1s;
@@ -421,7 +421,7 @@ p {
     height: 50px; }
   100% {
     height: calc(300px - (50px + 6%)); } }
-  .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content {
+  .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content {
     min-height: 300px;
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -448,17 +448,17 @@ p {
     height: 100%;
     top: 0;
     opacity: 100%; } }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span {
       width: 1px;
       min-height: 300px;
       position: absolute;
       background-color: rgba(255, 255, 255, 0.21);
       top: 0; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2), .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(2), .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span:nth-child(2), .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(2) {
       left: 50%; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
       right: 14%; }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content p {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grid:focus .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grid:active .services_content_wrapper_border_grids_content p {
       color: white;
       font-size: 16px; }
 
@@ -481,6 +481,44 @@ p {
       margin-bottom: 30px; }
     .footer_content .credentials {
       font-size: 11px; }
+
+@media screen and (max-width: 1024px) {
+  .services_header_image,
+  .contact_header_image {
+    height: 30vh; }
+  .intro {
+    height: 30vh; }
+    .intro_head {
+      display: block; }
+      .intro_head .headline {
+        margin-bottom: 3%; }
+  .intro_content_row {
+    display: block; }
+    .intro_content_row .headline {
+      margin-bottom: 10%; }
+    .intro_content_row .subhead {
+      margin-bottom: 10px; }
+    .intro_content_row .paragraph {
+      margin-right: 0; }
+    .intro_content_row p:nth-child(2) {
+      margin-bottom: 0; }
+  .intro_content.content_two .intro_content_row .headline {
+    margin-bottom: 10%; }
+  .contact .contact_intro {
+    display: block; }
+    .contact .contact_intro .contact_form {
+      margin: 0;
+      width: auto;
+      padding: 7%; }
+      .contact .contact_intro .contact_form form input {
+        width: auto;
+        border: 1px solid #cccbcb;
+        padding: 4%; }
+      .contact .contact_intro .contact_form form textarea {
+        width: auto; }
+    .contact .contact_intro .contact_map_image img {
+      width: 100vw;
+      height: 35vh; } }
 
 @media screen and (max-width: 767px) {
   p {
@@ -536,28 +574,9 @@ p {
       -mx-transition: all 0.5s linear 0s;
       -moz-transition: all 0.5s linear 0s;
       transition: all 0.5s linear 0s; }
-  .intro {
-    height: 35vh; }
-    .intro_head {
-      display: block; }
-      .intro_head .headline {
-        margin-bottom: 3%; }
-  .intro_content_row {
-    display: block; }
-    .intro_content_row .headline {
-      margin-bottom: 10%; }
-    .intro_content_row .subhead {
-      margin-bottom: 10px; }
-    .intro_content_row .paragraph {
-      margin-right: 0; }
-    .intro_content_row p:nth-child(2) {
-      margin-bottom: 0; }
-  .intro_content.content_two .intro_content_row .headline {
-    margin-bottom: 10%; }
-  .services_header_image {
-    height: 30vh; }
   .services_content_wrapper {
-    display: block; }
+    display: block;
+    margin: 7% 6%; }
     .services_content_wrapper_border_grids {
       min-height: 200px;
       margin-bottom: 15%; }
@@ -569,14 +588,22 @@ p {
       height: 50px; }
     100% {
       height: 170px; } }
-    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content {
+    .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grids:focus .services_content_wrapper_border_grids_content {
       min-height: 200px;
-      justify-content: flex-end;
-      width: calc(100% - 5%); }
-      .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p:last-child {
-        margin-bottom: 20px; }
+      width: calc(100% - 7%);
+      padding-top: 15px; }
+      .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grids:focus .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
+        right: 8%; }
+      .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content p, .services_content_wrapper_border_grids:focus .services_content_wrapper_border_grids_content p {
+        font-size: 15px;
+        padding-right: 7%; }
   .footer {
     width: calc(100% - 6%);
     padding: 7% 3%; }
     .footer_content img {
-      width: 70px; } }
+      width: 70px; }
+    .footer_content p {
+      font-size: 13px;
+      line-height: 1.1; }
+    .footer_content .credentials {
+      line-height: 1.4; } }
