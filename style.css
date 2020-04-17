@@ -579,7 +579,7 @@ p {
       -moz-transition: all 0.5s linear 0s;
       transition: all 0.5s linear 0s; }
   .services_content .headline {
-    width: 100vw; }
+    width: 75vw; }
   .services_content_wrapper {
     display: block;
     margin: 7% 6%; }
