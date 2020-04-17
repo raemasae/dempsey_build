@@ -65,6 +65,7 @@ header,
 menu,
 nav,
 section {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
@@ -357,9 +358,12 @@ p {
   -moz-grid-gap: 2%;
   grid-gap: 2%;
   grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+  margin: 7%;
   grid-gap: 70px;
-  grid-row-gap: 100px;
-  margin: 7%; }
+  -webkit-grid-row-gap: 100px;
+  -ms-grid-row-gap: 100px;
+  -moz-grid-row-gap: 100px;
+  grid-row-gap: 100px; }
   .services_content_wrapper_border_grids {
     background-size: cover;
     background-position: center;
@@ -487,7 +491,7 @@ p {
   .contact_header_image {
     height: 30vh; }
   .intro {
-    height: 30vh; }
+    height: 35vh; }
     .intro_head {
       display: block; }
       .intro_head .headline {

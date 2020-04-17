@@ -28,9 +28,12 @@
     @include base_grid;
 
     grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
-    grid-gap: 70px;
-    grid-row-gap: 100px;
     margin: 7%;
+    grid-gap: 70px;
+
+    @include prefix((
+      grid-row-gap: 100px,
+    ), webkit ms moz);
 
     &_border {
       // border: 3px solid;
