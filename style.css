@@ -591,10 +591,10 @@ p {
       bottom: 0;
       height: 50px; }
     100% {
-      height: 170px; } }
+      height: 100%; } }
     .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content, .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content {
       min-height: 200px;
-      width: calc(100% - 7%);
+      width: 100%;
       padding-top: 15px; }
       .services_content_wrapper_border_grids:hover .services_content_wrapper_border_grids_content .hover_background span:nth-child(3), .services_content_wrapper_border_grids:active .services_content_wrapper_border_grids_content .hover_background span:nth-child(3) {
         right: 8%; }
