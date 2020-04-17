@@ -169,6 +169,10 @@
 
   //services
   .services_content {
+    .headline {
+      width: 100vw;
+    }
+
     &_wrapper {
       display: block;
       margin: 7% 6%;
