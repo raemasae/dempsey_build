@@ -90,6 +90,9 @@ h2 {
   letter-spacing: 1px;
   color: #355426; }
 
+h1 {
+  font-size: calc(18px + 5.5vw); }
+
 h3 {
   font-size: calc(18px + 1vw);
   font-family: "Anton", serif;
@@ -105,8 +108,7 @@ p {
   padding: 1% 0 0 3%;
   display: inline-flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 4px; }
+  width: 100%; }
   .header_logo img {
     width: 150px; }
   .header nav {
@@ -159,16 +161,16 @@ p {
     -ms-grid-template-columns: repeat(6, 1fr);
     -moz-grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    -webkit-grid-template-rows: repeat(2, 1fr);
-    -ms-grid-template-rows: repeat(2, 1fr);
-    -moz-grid-template-rows: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    -webkit-grid-template-rows: repeat(2, auto);
+    -ms-grid-template-rows: repeat(2, auto);
+    -moz-grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     -webkit-grid-gap: 2%;
     -ms-grid-gap: 2%;
     -moz-grid-gap: 2%;
     grid-gap: 2%;
     grid-template-areas: "headline headline ...." "main_button main_button ....";
-    padding: 10% 0;
+    padding-top: 5%;
     grid-row-gap: 30px; }
     .intro_head .headline {
       grid-area: headline;
@@ -176,7 +178,7 @@ p {
     .intro_head .main_button {
       background-color: #8cd360;
       color: #355426;
-      padding: 3% 10%;
+      padding: 20px 36px;
       font-family: "Merriweather Sans", sans-serif;
       font-weight: 100;
       text-decoration: none;
@@ -186,9 +188,7 @@ p {
       box-shadow: 0 3px 6px #c7c6c6;
       border-radius: 0;
       grid-area: main_button;
-      width: 60%;
-      height: 48px;
-      line-height: 48px; }
+      width: 60%; }
     .intro_head .main_button:hover {
       background-color: #80c554; }
     .intro_head .main_button:active {
@@ -207,10 +207,10 @@ p {
     -ms-grid-template-columns: repeat(6, 1fr);
     -moz-grid-template-columns: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
-    -webkit-grid-template-rows: repeat(2, 1fr);
-    -ms-grid-template-rows: repeat(2, 1fr);
-    -moz-grid-template-rows: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    -webkit-grid-template-rows: repeat(2, auto);
+    -ms-grid-template-rows: repeat(2, auto);
+    -moz-grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
     -webkit-grid-gap: 2%;
     -ms-grid-gap: 2%;
     -moz-grid-gap: 2%;
@@ -285,7 +285,7 @@ p {
     .contact_form form input.main_button {
       background-color: #8cd360;
       color: #355426;
-      padding: 3% 10%;
+      padding: 20px 36px;
       font-family: "Merriweather Sans", sans-serif;
       font-weight: 100;
       text-decoration: none;
@@ -352,10 +352,10 @@ p {
   -ms-grid-template-columns: repeat(6, 1fr);
   -moz-grid-template-columns: repeat(6, 1fr);
   grid-template-columns: repeat(6, 1fr);
-  -webkit-grid-template-rows: repeat(2, 1fr);
-  -ms-grid-template-rows: repeat(2, 1fr);
-  -moz-grid-template-rows: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  -webkit-grid-template-rows: repeat(2, auto);
+  -ms-grid-template-rows: repeat(2, auto);
+  -moz-grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
   -webkit-grid-gap: 2%;
   -ms-grid-gap: 2%;
   -moz-grid-gap: 2%;

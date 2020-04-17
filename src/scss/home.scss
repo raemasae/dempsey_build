@@ -9,7 +9,7 @@
     @include base_grid;
 
     grid-template-areas: "headline headline ...." "main_button main_button ....";
-    padding: 10% 0;
+    padding-top: 5%;
     grid-row-gap: 30px;
 
     .headline {
@@ -22,8 +22,6 @@
 
       grid-area: main_button;
       width: 60%;
-      height: 48px;
-      line-height: 48px;
     }
 
     .main_button:hover {

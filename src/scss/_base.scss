@@ -70,7 +70,7 @@ $base_margin: 0 7%;
   @include prefix((
     display: grid,
     grid-template-columns: repeat(6, 1fr),
-    grid-template-rows: repeat(2, 1fr),
+    grid-template-rows: repeat(2, auto),
     grid-gap: 2%), webkit ms moz);
 }
 
@@ -125,6 +125,10 @@ $footer_fontsize: 15px;
 h1,
 h2 {
   @include headline_font;
+}
+
+h1 {
+  font-size: calc(18px + 5.5vw);
 }
 
 @mixin text_row {
