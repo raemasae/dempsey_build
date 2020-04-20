@@ -9,7 +9,8 @@
     height: 35vh;
 
     &_head {
-      display: block;
+      display: flex;
+      flex-flow: column;
 
       .headline {
         margin-bottom: 3%;

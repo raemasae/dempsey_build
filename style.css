@@ -148,9 +148,9 @@ p {
 
 .intro {
   background-image: url("images/home_test.jpeg");
-  background-size: cover;
-  background-position: center;
-  height: 60vh;
+  background-size: 100%;
+  background-position: bottom;
+  height: 75vh;
   padding: 0 7%; }
   .intro_head {
     -webkit-display: grid;
@@ -496,7 +496,8 @@ p {
   .intro {
     height: 35vh; }
     .intro_head {
-      display: block; }
+      display: flex;
+      flex-flow: column; }
       .intro_head .headline {
         margin-bottom: 3%; }
   .intro_content_row {
