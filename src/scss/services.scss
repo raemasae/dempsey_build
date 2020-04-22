@@ -6,6 +6,8 @@
 }
 
 .services_content {
+  position: relative;
+
   .headline {
     margin: 5% 0 0 7%;
     width: 40vw;
@@ -24,11 +26,17 @@
     border-radius: 5px;
   }
 
+  .services_paragraph {
+    margin: 3% 7% 5%;
+    max-width: 60%;
+  }
+
   &_wrapper {
     @include base_grid;
 
     grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
     margin: 7%;
+    margin-bottom: 100px;
     grid-gap: 70px;
 
     @include prefix((
@@ -201,6 +209,24 @@
           }
         }
       }
+    }
+  }
+
+  .main_button {
+    @include button;
+
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    z-index: 1;
+
+    p {
+      line-height: 1;
+    }
+
+    .fa-envelope {
+      font-size: 18px;
+      display: none;
     }
   }
 }

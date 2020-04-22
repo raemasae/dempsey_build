@@ -174,9 +174,14 @@
       width: 75vw;
     }
 
+    .services_paragraph {
+      max-width: none;
+    }
+
     &_wrapper {
       display: block;
       margin: 7% 6%;
+      margin-bottom: 80px;
 
       &_border {
         &_grids {
@@ -220,6 +225,19 @@
             }
           }
         }
+      }
+    }
+
+    .main_button {
+      padding: 10px 20px;
+
+      p {
+        display: none;
+      }
+
+      .fa-envelope {
+        display: block;
+        font-size: 24px;
       }
     }
   }
