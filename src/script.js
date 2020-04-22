@@ -7,7 +7,7 @@ $(document).ready(function(){
 	function checkOffset() {
 			if($('.services_main_button').offset().top
 					>= $('.footer').offset().top)
-					$('.services_main_button').css({'position': 'absolute', 'bottom': '-95px'});
+					$('.services_main_button').css({'position': 'absolute', 'bottom': '-80px'});
 			if($(document).scrollTop() + window.innerHeight < $('.footer').offset().top)
 					$('.services_main_button').css({'position': 'fixed', 'bottom': '5%'});
 					// restore when you scroll up
