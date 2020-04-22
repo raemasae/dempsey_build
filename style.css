@@ -275,7 +275,8 @@ p {
       margin-bottom: 15px;
       padding: 1%;
       width: 70%;
-      font-size: 16px; }
+      font-size: 16px;
+      border: 1px solid lightgrey; }
     .contact_form form textarea {
       width: 70%;
       height: 150px;
