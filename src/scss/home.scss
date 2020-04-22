@@ -87,6 +87,18 @@
   .intro_content_row {
     .headline {
       @include text_row;
+
+      grid-row: 1;
+      grid-column: 2 / 6;
+      position: relative;
+
+      .intro_content_row_image {
+        border-radius: 100%;
+        max-width: 100px;
+        margin-right: 2%;
+        position: relative;
+        top: 25px;
+      }
     }
 
     .three {

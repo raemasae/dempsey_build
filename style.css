@@ -91,7 +91,7 @@ h2 {
   color: #355426; }
 
 h1 {
-  font-size: calc(18px + 5.5vw); }
+  font-size: calc(18px + 5.3vw); }
 
 h3 {
   font-size: calc(18px + 1vw);
@@ -250,7 +250,16 @@ p {
     border-bottom: none;
     margin-bottom: 3%;
     text-align: center;
-    margin-right: 0; }
+    margin-right: 0;
+    grid-row: 1;
+    grid-column: 2 / 6;
+    position: relative; }
+    .intro_content.content_two .intro_content_row .headline .intro_content_row_image {
+      border-radius: 100%;
+      max-width: 100px;
+      margin-right: 2%;
+      position: relative;
+      top: 25px; }
   .intro_content.content_two .intro_content_row .three {
     grid-column: 2 / 6;
     text-align: center;
@@ -404,11 +413,11 @@ p {
   .services_content_wrapper_border .agricultural {
     background-image: url("images/Dempsey_Agricultural_small.jpg"); }
   .services_content_wrapper_border .utilities {
-    background-image: url("images/Dempsey_"); }
+    background-image: url("images/Dempsey_utilities.png"); }
   .services_content_wrapper_border .floodplain {
     background-image: url("images/Dempsey_FloodplainManagement_small.jpg"); }
   .services_content_wrapper_border .erosion {
-    background-image: url("images/Dempsey_"); }
+    background-image: url("images/Dempsey_erosion.png"); }
   .services_content_wrapper_border .stormwater {
     background-image: url("images/Dempsey_StormWaterQuality_small.jpg"); }
   .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grids:active .service_title {
@@ -512,7 +521,7 @@ p {
     .intro_content_row p:nth-child(2) {
       margin-bottom: 0; }
   .intro_content.content_two .intro_content_row .headline {
-    margin-bottom: 10%; }
+    margin-bottom: 5%; }
   .contact .contact_intro {
     display: block; }
     .contact .contact_intro .contact_form {
