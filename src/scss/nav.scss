@@ -1,67 +1,69 @@
 .header {
-  padding: 1% 0 0 3%;
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-
-  &_logo {
-    img {
-      width: 150px;
-    }
-  }
-
-  nav {
+  &_nav {
+    padding: 1% 0 0 3%;
+    display: inline-flex;
+    justify-content: space-between;
     width: 100%;
-    height: 72px;
-    margin-left: 2%;
-    border-bottom: 4px solid grey;
 
-    ul {
+    .header_logo {
+      img {
+        width: 150px;
+      }
+    }
+
+    nav {
       width: 100%;
       height: 72px;
-      display: inline-flex;
-      justify-content: flex-end;
-      position: relative;
+      margin-left: 2%;
+      border-bottom: 4px solid grey;
 
-      li {
-        list-style: none;
-        // margin-right: 1%;
-        align-self: flex-end;
-        padding: 0 2% 10px;
+      ul {
+        width: 100%;
+        height: 72px;
+        display: inline-flex;
+        justify-content: flex-end;
         position: relative;
-        bottom: 0;
-        min-width: 84px;
 
-        a {
-          text-decoration: none;
-          color: $green;
-          font-family: $header_font;
-          font-size: $link_fontsize;
+        li {
+          list-style: none;
+          // margin-right: 1%;
+          align-self: flex-end;
+          padding: 0 2% 10px;
+          position: relative;
+          bottom: 0;
+          min-width: 84px;
+
+          a {
+            text-decoration: none;
+            color: $green;
+            font-family: $header_font;
+            font-size: $link_fontsize;
+          }
         }
-      }
 
-      li:nth-child(2) {
-        margin-right: 5%;
-      }
-
-      li:hover {
-        background-color: white;
-
-        a {
-          border-bottom: 4px solid $light_green;
-          color: $light_green;
+        li:nth-child(2) {
+          margin-right: 5%;
         }
-      }
 
-      .selected {
-        a {
-          color: $light_green;
+        li:hover {
+          background-color: white;
+
+          a {
+            border-bottom: 4px solid $light_green;
+            color: $light_green;
+          }
+        }
+
+        .selected {
+          a {
+            color: $light_green;
+          }
         }
       }
     }
-  }
 
-  .mobile_nav {
-    display: none;
+    .mobile_nav {
+      display: none;
+    }
   }
 }
