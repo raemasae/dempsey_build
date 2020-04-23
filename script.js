@@ -4,6 +4,10 @@ $(document).ready(function(){
 		$(this).toggleClass('open', 500);
 	});
 
+	$(document).scroll(function() {
+			checkOffset();
+	});
+
 	function checkOffset() {
 			if($('.services_main_button').offset().top
 					>= $('.footer').offset().top)
@@ -13,8 +17,4 @@ $(document).ready(function(){
 					// restore when you scroll up
 			$('.services_main_button').scrollTop() + window.innerHeight;
 	}
-
-		$(document).scroll(function() {
-				checkOffset();
-		});
 });

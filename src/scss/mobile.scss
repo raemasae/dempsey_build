@@ -90,80 +90,82 @@
 
   //nav
   .header {
-    padding: 0;
-    margin: 5%;
-    display: flex;
-    flex-flow: column;
-    width: auto;
-
-    .header_logo {
-      position: absolute;
-      left: calc(50% - 10.5%);
-      top: 1.5%;
-      z-index: 1;
-
-      a {
-        img {
-          width: 80px;
-        }
-      }
-    }
-
-    .main_nav {
-      display: none;
-    }
-
-    .mobile_nav {
-      border: none;
-      margin: 0;
-      position: relative;
-      height: auto;
+    &_nav {
+      padding: 0;
+      margin: 5%;
       display: flex;
       flex-flow: column;
+      width: auto;
 
-      &_hamburger {
-        span {
-          display: block;
-          height: 5px;
-          width: 44px;
-          background: $green;
-          margin-bottom: 4px;
-        }
-
-        span:nth-child(2) {
-          width: 37px;
-        }
-      }
-
-      ul {
-        left: -100%;
-        height: 0;
-
-        li {
-          align-self: flex-start;
-          padding-left: 0;
-        }
-      }
-    }
-
-    .mobile_nav.open {
       .header_logo {
-        display: block;
+        position: absolute;
+        left: calc(50% - 10.5%);
+        top: 1.5%;
+        z-index: 1;
 
-        @include prefix((
-          transition: all 0.5s linear 0s,
-        ), webkit mx moz);
+        a {
+          img {
+            width: 80px;
+          }
+        }
       }
 
-      ul {
-        display: block;
-        margin-top: 30px;
-        height: auto;
-        left: 0;
+      .main_nav {
+        display: none;
+      }
 
-        @include prefix((
-          transition: all 0.5s linear 0s,
-        ), webkit mx moz);
+      .mobile_nav {
+        border: none;
+        margin: 0;
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+
+        &_hamburger {
+          span {
+            display: block;
+            height: 5px;
+            width: 44px;
+            background: $green;
+            margin-bottom: 4px;
+          }
+
+          span:nth-child(2) {
+            width: 37px;
+          }
+        }
+
+        ul {
+          left: -100%;
+          height: 0;
+
+          li {
+            align-self: flex-start;
+            padding-left: 0;
+          }
+        }
+      }
+
+      .mobile_nav.open {
+        .header_logo {
+          display: block;
+
+          @include prefix((
+            transition: all 0.5s linear 0s,
+          ), webkit mx moz);
+        }
+
+        ul {
+          display: block;
+          margin-top: 30px;
+          height: auto;
+          left: 0;
+
+          @include prefix((
+            transition: all 0.5s linear 0s,
+          ), webkit mx moz);
+        }
       }
     }
   }
