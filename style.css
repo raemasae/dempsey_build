@@ -185,7 +185,7 @@ p {
       letter-spacing: 1px;
       text-align: center;
       border: none;
-      box-shadow: 0 3px 6px #c7c6c6;
+      box-shadow: 0 3px 6px rgba(67, 67, 67, 0.37);
       border-radius: 0;
       grid-area: main_button;
       width: 60%; }
@@ -240,30 +240,8 @@ p {
     .intro_content_row .one {
       grid-column: 3 / 5; }
     .intro_content_row .two {
-      grid-column: 5 / 7; }
-
-.intro_content.content_two {
-  background-image: url("images/dempsey_testbg@2x.png");
-  background-size: cover; }
-  .intro_content.content_two .intro_content_row .headline {
-    grid-column: 2 / 6;
-    border-bottom: none;
-    margin-bottom: 3%;
-    text-align: center;
-    margin-right: 0;
-    grid-row: 1;
-    grid-column: 2 / 6;
-    position: relative; }
-    .intro_content.content_two .intro_content_row .headline .intro_content_row_image {
-      border-radius: 100%;
-      max-width: 100px;
-      margin-right: 2%;
-      position: relative;
-      top: 25px; }
-  .intro_content.content_two .intro_content_row .three {
-    grid-column: 2 / 6;
-    text-align: center;
-    margin-right: 0; }
+      grid-column: 5 / 7;
+      margin-bottom: 0; }
 
 .contact_form {
   width: 40vw;
@@ -302,7 +280,7 @@ p {
       letter-spacing: 1px;
       text-align: center;
       border: none;
-      box-shadow: 0 3px 6px #c7c6c6;
+      box-shadow: 0 3px 6px rgba(67, 67, 67, 0.37);
       border-radius: 0; }
     .contact_form form input.main_button:hover {
       background-color: #80c554; }
@@ -320,16 +298,42 @@ p {
 .contact .contact_intro {
   display: flex;
   justify-content: space-between; }
-  .contact .contact_intro .contact_form_title .subhead {
-    color: #355426; }
-  .contact .contact_intro .contact_form_address {
-    margin: 5% 0 10%; }
-    .contact .contact_intro .contact_form_address p:last-child {
-      margin-top: 20px; }
-  .contact .contact_intro .contact_map_image img {
-    width: 60vw;
-    height: 75vh;
-    object-fit: cover; }
+  .contact .contact_intro .contact_form {
+    padding: 5% 0; }
+    .contact .contact_intro .contact_form_title .subhead {
+      color: #355426; }
+    .contact .contact_intro .contact_form_address {
+      margin: 5% 0 10%; }
+      .contact .contact_intro .contact_form_address p:last-child {
+        margin-top: 20px; }
+  .contact .contact_intro .intro_content.content_two {
+    background-image: url("images/dempsey_testbg@2x.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    width: 60vw; }
+    .contact .contact_intro .intro_content.content_two .intro_content_row {
+      display: block; }
+      .contact .contact_intro .intro_content.content_two .intro_content_row .headline {
+        grid-column: 2 / 6;
+        border-bottom: none;
+        margin-bottom: 3%;
+        text-align: center;
+        margin-right: 0;
+        grid-row: 1;
+        grid-column: 2 / 6;
+        position: relative; }
+        .contact .contact_intro .intro_content.content_two .intro_content_row .headline .intro_content_row_image {
+          border-radius: 100%;
+          width: 100px;
+          margin-right: 2%;
+          position: relative;
+          top: 25px; }
+      .contact .contact_intro .intro_content.content_two .intro_content_row .three {
+        margin-top: 30px;
+        text-align: center;
+        margin-right: 0; }
 
 .services_header_image {
   background-image: url("images/design_test.jpeg");
@@ -403,7 +407,7 @@ p {
     .services_content_wrapper_border .design {
       background-image: url("images/dempsey_testbg.png"); }
     .services_content_wrapper_border .permitting {
-      background-image: url("images/Dempsey_Permitting_small.png"); }
+      background-image: url("images/Permitting.JPG"); }
     .services_content_wrapper_border .master_plan {
       background-image: url("images/Dempsey_MasterPlanning_small.jpg"); }
     .services_content_wrapper_border .construction {
@@ -421,7 +425,7 @@ p {
     .services_content_wrapper_border .floodplain {
       background-image: url("images/Dempsey_FloodplainManagement_small.jpg"); }
     .services_content_wrapper_border .erosion {
-      background-image: url("images/Dempsey_erosion.png"); }
+      background-image: url("images/Erosion-and-Sediment-Control.jpg"); }
     .services_content_wrapper_border .stormwater {
       background-image: url("images/Dempsey_StormWaterQuality_small.jpg"); }
     .services_content_wrapper_border_grids:hover .service_title, .services_content_wrapper_border_grids:active .service_title {
@@ -492,7 +496,7 @@ p {
     letter-spacing: 1px;
     text-align: center;
     border: none;
-    box-shadow: 0 3px 6px #c7c6c6;
+    box-shadow: 0 3px 6px rgba(67, 67, 67, 0.37);
     border-radius: 0;
     position: fixed;
     bottom: 5%;
@@ -547,6 +551,8 @@ p {
       margin-bottom: 0; }
   .intro_content.content_two .intro_content_row .headline {
     margin-bottom: 5%; }
+    .intro_content.content_two .intro_content_row .headline .intro_content_row_image {
+      max-width: 80px; }
   .contact .contact_intro {
     display: block; }
     .contact .contact_intro .contact_form {
@@ -559,9 +565,8 @@ p {
         padding: 4%; }
       .contact .contact_intro .contact_form form textarea {
         width: auto; }
-    .contact .contact_intro .contact_map_image img {
-      width: 100vw;
-      height: 35vh; } }
+    .contact .contact_intro .intro_content.content_two {
+      width: 100%; } }
 
 @media screen and (max-width: 767px) {
   p {

@@ -11,6 +11,8 @@
     justify-content: space-between;
 
     .contact_form {
+      padding: 5% 0;
+
       &_title {
         .subhead {
           color: $green;
@@ -26,12 +28,37 @@
       }
     }
 
-    .contact_map {
-      &_image {
-        img {
-          width: 60vw;
-          height: 75vh;
-          object-fit: cover;
+    .intro_content.content_two {
+      background-image: url('images/dempsey_testbg@2x.png');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      width: 60vw;
+
+      .intro_content_row {
+        display: block;
+
+        .headline {
+          @include text_row;
+
+          grid-row: 1;
+          grid-column: 2 / 6;
+          position: relative;
+
+          .intro_content_row_image {
+            border-radius: 100%;
+            width: 100px;
+            margin-right: 2%;
+            position: relative;
+            top: 25px;
+          }
+        }
+
+        .three {
+          margin-top: 30px;
+          text-align: center;
+          margin-right: 0;
         }
       }
     }

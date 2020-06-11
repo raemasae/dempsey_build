@@ -76,35 +76,7 @@
 
     .two {
       grid-column: 5 / 7;
-    }
-  }
-}
-
-.intro_content.content_two {
-  background-image: url('images/dempsey_testbg@2x.png');
-  background-size: cover;
-
-  .intro_content_row {
-    .headline {
-      @include text_row;
-
-      grid-row: 1;
-      grid-column: 2 / 6;
-      position: relative;
-
-      .intro_content_row_image {
-        border-radius: 100%;
-        max-width: 100px;
-        margin-right: 2%;
-        position: relative;
-        top: 25px;
-      }
-    }
-
-    .three {
-      grid-column: 2 / 6;
-      text-align: center;
-      margin-right: 0;
+      margin-bottom: 0;
     }
   }
 }
